@@ -86,7 +86,7 @@ while True:
                             inventario.append(nuevo)
 
         elif opcion == 9:
-            print("Saliendo...")
+            print("Saliendo es saliendo...")
             break
 
         else:
