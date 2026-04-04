@@ -9,7 +9,7 @@ star = 1
 while star != 0:
     try:
         menu()
-        opcion = int(input("Opción: "))
+        opcion = int(input("Marque aqui la opción que desea ejecutar: "))
 
         if opcion == 1:
             nombre = input("Nombre: ")
