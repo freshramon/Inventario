@@ -1,5 +1,18 @@
 # servicios.py
 
+def menu():
+    print("\n--- INVENTARIO ---")
+    print("1. Agregar")
+    print("2. Mostrar")
+    print("3. Buscar")
+    print("4. Actualizar")
+    print("5. Eliminar")
+    print("6. Estadísticas")
+    print("7. Guardar CSV")
+    print("8. Cargar CSV")
+    print("9. Salir\n")
+    
+
 def agregar_producto(inventario, nombre, precio, cantidad):
     """
     Agrega un producto al inventario.
