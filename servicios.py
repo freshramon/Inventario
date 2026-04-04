@@ -99,9 +99,10 @@ def calcular_estadisticas(inventario):
         return None
 
     subtotal = lambda p: p["precio"] * p["cantidad"]
-
-    unidades_totales = sum(p["cantidad"] for p in inventario)
-    valor_total = sum(subtotal(p) for p in inventario)
+    for p in inventario:
+        unidades_totales = sum(p["cantidad"])
+    for p in inventario:
+        valor_total = sum(subtotal(p))
 
     producto_mas_caro = max(inventario, key=lambda p: p["precio"])
     producto_mayor_stock = max(inventario, key=lambda p: p["cantidad"])
