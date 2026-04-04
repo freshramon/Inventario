@@ -2,23 +2,11 @@
 from servicios import *
 from archivos import *
 
-
-def menu():
-    print("\n--- INVENTARIO ---")
-    print("1. Agregar")
-    print("2. Mostrar")
-    print("3. Buscar")
-    print("4. Actualizar")
-    print("5. Eliminar")
-    print("6. Estadísticas")
-    print("7. Guardar CSV")
-    print("8. Cargar CSV")
-    print("9. Salir")
-
-
+menu()
 inventario = []
+star = 1
 
-while True:
+while star != 0:
     try:
         menu()
         opcion = int(input("Opción: "))
@@ -86,6 +74,7 @@ while True:
                             inventario.append(nuevo)
 
         elif opcion == 9:
+            star = 1
             print("Saliendo es saliendo...")
             break
 
